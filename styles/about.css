@@ -1,0 +1,219 @@
+.hero-about {
+  background: #292929;
+}
+
+.hero-about h1 {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: end;
+  letter-spacing: 1px;
+}
+
+.hero-about .about-hero-img {
+  width: 70%;
+  margin: auto;
+}
+
+.hero-about .about-hero-img img {
+  width: 100%;
+}
+
+.about {
+  background: white;
+}
+
+.about h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.about .big-text-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .big-text-number .big-number {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #51007a;
+  font-family: "Oswald", sans-serif;
+}
+
+.about .big-text-number .big-text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 50%;
+  line-height: 1.7rem;
+  color: #51007a;
+  margin-left: 20px;
+}
+
+.about h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+.about h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+.about-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-contact .contact1 {
+  background-image: url(/images/about/about-careers.jpg);
+}
+
+.about-contact .contact2 {
+  background-image: url(/images/about/about-founder.jpg);
+}
+
+.about-contact .contact3 {
+  background-image: url(/images/about/about-service.jpg);
+}
+
+.about-contact .contact1,
+.about-contact .contact2,
+.about-contact .contact3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-position: center top;
+}
+
+.about-contact .contact2::after {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about-contact h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-contact h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.about-contact .contact-btn {
+  width: 90%;
+  max-width: 400px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 0px auto 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-contact .contact-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hero-about {
+    background: #292929;
+  }
+  .hero-about h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: end;
+    letter-spacing: 1px;
+  }
+  .about .big-text-number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .about .big-text-number .big-number {
+    font-size: 14rem;
+  }
+  .about .big-text-number .big-text {
+    font-size: 1.8rem;
+    margin-left: 0px;
+  }
+  .about-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-contact .contact1,
+  .about-contact .contact2,
+  .about-contact .contact3 {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+/*# sourceMappingURL=about.css.map */

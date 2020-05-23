@@ -1,0 +1,131 @@
+$base-color: #51007a;
+
+.products-page-container {
+  width: 100%;
+  background: white;
+
+  // Filters
+  .products-categories {
+    .btns-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button.is-checked {
+      background: $base-color;
+
+      a {
+        color: white;
+      }
+    }
+
+    .filter-btn {
+      width: 200px;
+      height: 35px;
+      border: 2px solid $base-color;
+      background: none;
+      max-width: 200px;
+      border-radius: 5px;
+
+      a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    .filter-btn:hover {
+      background: $base-color;
+
+      a {
+        color: white;
+      }
+    }
+
+    .dropdown-menu {
+      background: black;
+
+      a {
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        border-bottom: 3px solid $base-color;
+        margin-top: 15px;
+      }
+
+      a:hover {
+        background: none;
+      }
+    }
+  }
+
+  // Product Card
+  .products-container {
+    .card-light {
+      background: #e7e9e9;
+    }
+
+    .card-dark {
+      background: #bdc3c6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .card-title {
+      text-transform: capitalize;
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .card-img {
+      width: 70%;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      text-transform: capitalize;
+      color: black;
+      font-size: 0.9rem;
+    }
+
+    .card-see-product {
+      width: 80%;
+      max-width: 150px;
+      height: 50px;
+      margin: auto;
+      background: $base-color;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  // Filters
+  .filters {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}

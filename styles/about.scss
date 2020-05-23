@@ -1,0 +1,180 @@
+$base-color: #51007a;
+
+.hero-about {
+  background: #292929;
+
+  h1 {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: end;
+    letter-spacing: 1px;
+  }
+
+  .about-hero-img {
+    width: 70%;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about {
+  background: white;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .big-text-number {
+    display: flex;
+    align-items: center;
+
+    .big-number {
+      font-size: 6rem;
+      font-weight: 700;
+      color: $base-color;
+      font-family: "Oswald", sans-serif;
+    }
+
+    .big-text {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      width: 50%;
+      line-height: 1.7rem;
+      color: $base-color;
+      margin-left: 20px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    margin-top: 3px;
+  }
+}
+
+.about-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contact1 {
+    background-image: url(/images/about/about-careers.jpg);
+  }
+  .contact2 {
+    background-image: url(/images/about/about-founder.jpg);
+  }
+  .contact3 {
+    background-image: url(/images/about/about-service.jpg);
+  }
+
+  .contact1,
+  .contact2,
+  .contact3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center top;
+  }
+
+  .contact2::after {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .contact-btn {
+    width: 90%;
+    max-width: 400px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 0px auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-about {
+    background: #292929;
+
+    h1 {
+      color: white;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: end;
+      letter-spacing: 1px;
+    }
+  }
+
+  .about {
+    .big-text-number {
+      flex-direction: column;
+      justify-content: start;
+
+      .big-number {
+        font-size: 14rem;
+      }
+
+      .big-text {
+        font-size: 1.8rem;
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .about-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact1,
+    .contact2,
+    .contact3 {
+      height: 500px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

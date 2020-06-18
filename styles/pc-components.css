@@ -73,6 +73,10 @@
   text-decoration: none;
 }
 
+.products-page-container .products-container a:focus {
+  outline: none;
+}
+
 .products-page-container .products-container .card-title {
   text-transform: capitalize;
   color: black;
@@ -113,9 +117,22 @@
           align-items: center;
 }
 
+@media (max-width: 400px) {
+  .products-page-container .products-container .card-see-product {
+    height: 35px;
+  }
+}
+
 .products-page-container .products-container .card-see-product a {
   color: white;
   text-transform: uppercase;
+  font-size: 16px;
+}
+
+@media (max-width: 400px) {
+  .products-page-container .products-container .card-see-product a {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 576px) {

@@ -114,23 +114,49 @@
             <button class="btn filter-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown button
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">All products</a>
-              <a class="dropdown-item" href="#">audio</a>
-              <a class="dropdown-item" href="#">cases</a>
-              <a class="dropdown-item" href="#">gaming accessories</a>
-              <a class="dropdown-item" href="#">crft</a>
-              <a class="dropdown-item" href="#">cooling</a>
-              <a class="dropdown-item" href="#">motherboards</a>
-              <a class="dropdown-item" href="#">power</a>
-              <a class="dropdown-item" href="#">lighting</a>
-              <a class="dropdown-item" href="#">case accessories</a>
+            <div class="dropdown-menu filters " aria-labelledby="dropdownMenuButton">
+              <div class="button-group js-radio-button-group text-center" data-filter-group="size">
+
+                <button type="button" class="filter-btn m-1 button active" data-filter="">
+                    <a href="#">all products</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".audio">
+                    <a href="#">audio</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".cases">
+                    <a href="#">cases</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".gaming-accessories">
+                    <a href="#">gaming accessories</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".crft">
+                    <a href="#">crft</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".cooling">
+                    <a href="#">cooling</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".motherboards">
+                    <a href="#">motherboards</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".power">
+                    <a href="#">power</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".lighting">
+                    <a href="#">lighting</a>
+                </button>
+                <button type="button" class="filter-btn m-1 button" data-filter=".case-accessories">
+                    <a href="#">case accessories</a>
+                </button>
+              </div>
             </div>
           </div>
+
         <!-- Dropdown categories Mobile End-->
+        
+      
         </div>
 
-        <div class="products-container pb-5">
+        <div class="products-container">
             <div class="container">
                 <div class="row d-sm-flex flex-xs-column justify-content-center grid">
                     <div class="col-6 col-md-4 col-lg-3 card-light grid-item audio">

@@ -107,6 +107,14 @@ $base-color: #51007a;
 }
 // Navbar End
 
+button:focus,
+a:focus {
+  outline: none;
+}
+// button:focus {
+//   outline: none;
+// }
+
 // --Content Page-- //
 
 // Hero-Section
@@ -158,6 +166,9 @@ $base-color: #51007a;
     text-decoration: none;
     color: black;
     transition: 0.3s ease;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   .see-all-products {
@@ -174,6 +185,9 @@ $base-color: #51007a;
     text-decoration: none;
     color: white;
     transition: 0.3s ease;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   .see-cases:hover {
@@ -536,7 +550,7 @@ $base-color: #51007a;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .navbar-links {
     background: black;
   }
